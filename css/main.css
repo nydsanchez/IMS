@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #464646;
+  line-height: 1.6;
+}
+
+.heading__primary {
+  color: #00285a;
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+
+.heading__secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #00346e;
+}
+
+.heading__tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.menu_text {
+  font-size: 1.8rem;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.u-margin-botton {
+  margin-top: 48%;
+}
+
+.u-margin-left-small {
+  margin-left: 5rem;
+}
+
+.u-all-width {
+  width: 100%;
+}
+
+.u-line-space-medium {
+  line-height: 4rem;
+}
+
+.u-padding-side-small {
+  padding: 0 5rem;
+}
+
+.u-margin-auto {
+  margin: 1rem auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 9.6rem;
+  background: #fff;
+  box-shadow: 0 2px, 4px, 0.3;
+}
+.header_img {
+  width: 25rem;
+}
+
+/*.main {
+
+}*/
+.footer {
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  background: #004c9c;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.mainMenu li {
+  list-style: none;
+}
+.mainMenu li a {
+  font-size: 1.6rem;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainMenu {
+  margin-right: 5rem;
+}
+
+.menu__ico {
+  width: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

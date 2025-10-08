@@ -1,0 +1,35 @@
+@use "../abstract/_variables.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: variables.$color-grey-dark-2;
+  line-height: 1.6;
+}
+
+.heading__primary {
+  color: variables.$color-primary-dark;
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+
+.heading__secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: variables.$color-primary-medium;
+}
+
+.heading__tertiary {
+  font-size: variables.$default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: variables.$default-font-size;
+}
+
+.menu_text {
+  font-size: 1.8rem;
+}

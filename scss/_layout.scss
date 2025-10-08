@@ -1,0 +1,35 @@
+@use "abstract/variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: variables.$color-grey-light-1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 9.6rem;
+  background: variables.$color-secondary;
+  box-shadow: 0 2px, 4px, 0.3;
+  &_img {
+    width: 25rem;
+  }
+}
+
+/*.main {
+ 
+}*/
+
+.footer {
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  background: variables.$color-primary;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: variables.$color-secondary;
+}

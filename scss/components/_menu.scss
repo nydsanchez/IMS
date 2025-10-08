@@ -1,0 +1,22 @@
+.mainMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  & li {
+    list-style: none;
+    & a {
+      font-size: 1.6rem;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  margin-right: 5rem;
+}
+
+.menu__ico {
+  width: 2rem;
+}

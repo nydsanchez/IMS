@@ -19,23 +19,14 @@
           <li>
             <a href="#">
               <img
-                src="./img/ingresoProd.png"
+                src="./img/gestionInventario.png"
                 alt="ingresoProd"
                 class="menu__ico"
               />
-              Ingreso</a
+              Gestión de Stock</a
             >
           </li>
-          <li>
-            <a href="#">
-              <img
-                src="./img/egresoProd.png"
-                alt="egresoProd"
-                class="menu__ico"
-              />
-              Egreso</a
-            >
-          </li>
+
           <li>
             <a href="#">
               <img
@@ -43,7 +34,7 @@
                 alt="CatalagoProductos"
                 class="menu__ico"
               />
-              Catalago</a
+              Catálago de Productos</a
             >
           </li>
           <li>
@@ -59,6 +50,24 @@
         </ul>
       </nav>
     </header>
+    <section id="gstionStock">
+      <form>
+        <h2>Gestión de Stock de Productos</h2>
+        <input type="date" placeholder="fecha" />
+        <select name="productos" id="productos">
+          <option value="">Seleccione un Producto</option>
+        </select>
+        <select name="movimiento" id="movimiento">
+          <option value="">Seleccion el tipo de movimiento</option>
+          <option value="1">Compra</option>
+          <option value="2">Venta</option>
+          <option value="3">Traslado</option>
+          <option value="4">Devolucion</option>
+        </select>
+        <input type="number" placeholder="cantidad" />
+        <input type="number" placeholder="precio unitario" />
+      </form>
+    </section>
     <script src="./js/ingreso.js"></script>
   </body>
 </html>

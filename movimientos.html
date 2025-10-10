@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/img/ico_inventarioBco.png"
+      href="/img/logo_header_TextH.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Sistema de Gestion de Inventario</title>
+    <title>SERVISTOCK</title>
   </head>
   <body>
     <header class="header">
@@ -29,6 +29,9 @@
           <li>
             <a href="./inventario.html"> Inventario</a>
           </li>
+          <li>
+            <a href="#">Reportes</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -36,38 +39,37 @@
       <section id="gestionStock">
         <form class="form_stock">
           <h2 class="form_title">Gestión de Stock de Productos</h2>
-          <fieldset>
-            <div>
-              <label for="nroMov">Referencia:</label>
-              <input type="text" id="nroMov" placeholder="Nro. Referencia" />
-            </div>
-            <div>
-              <label for="dateMov">Fecha:</label>
-              <input type="date" id="dateMov" placeholder="fecha" />
-            </div>
-            <div>
-              <label for="movimiento">Tipo de Movimiento</label>
-              <select name="movimiento" id="movimiento">
-                <option value="">Movimiento</option>
-                <option value="1">Compra</option>
-                <option value="2">Venta</option>
-                <option value="3">Traslado</option>
-                <option value="4">Devolucion</option>
-              </select>
-            </div>
-            <div>
-              <label for="proveedor">Proveedor:</label>
-              <input type="text" id="proveedor" placeholder="Proveedor" />
-            </div>
-          </fieldset>
+
+          <div class="form_section">
+            <label for="nroMov">Referencia:</label>
+            <input type="text" id="nroMov" placeholder="Nro. Referencia" />
+          </div>
+          <div class="form_section">
+            <label for="dateMov">Fecha:</label>
+            <input type="date" id="dateMov" placeholder="fecha" />
+          </div>
+          <div class="form_section">
+            <label for="movimiento">Tipo de Movimiento</label>
+            <select name="movimiento" id="movimiento">
+              <option value="">Movimiento</option>
+              <option value="1">Compra</option>
+              <option value="2">Venta</option>
+              <option value="3">Traslado</option>
+              <option value="4">Devolucion</option>
+            </select>
+          </div>
+          <div class="form_section">
+            <label for="proveedor">Proveedor:</label>
+            <input type="text" id="proveedor" placeholder="Proveedor" />
+          </div>
 
           <table>
             <tr>
-              <th>Codigo Producto</th>
+              <th>Cod. Producto</th>
               <th>No. Lote</th>
-              <th>Unidad de Medida</th>
+              <th>UdM</th>
               <th>Cantidad</th>
-              <th>Precio Unitario</th>
+              <th>P. Unit.</th>
               <th>Monto</th>
             </tr>
             <tbody>

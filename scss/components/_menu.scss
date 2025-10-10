@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   @media (max-width: 700px) {
     flex-flow: column;
     align-items: flex-start;
@@ -16,10 +16,9 @@
     & a {
       font-size: 1.6rem;
       color: variables.$color-menu;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      display: block;
+      padding: 0.5rem;
+      border-radius: 5px;
       @media (max-width: 800px) {
         font-size: 1.2rem;
       }
@@ -27,7 +26,8 @@
         font-size: 1.8rem;
       }
       &:hover {
-        color: variables.$color-primary;
+        background: variables.$color-accent-light;
+        // color: variables.$color-primary;
       }
     }
   }

@@ -1,12 +1,17 @@
 .form_stock {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: space-around;
   & fieldset {
     display: flex;
     width: 100%;
     border: none;
     gap: 5rem;
+  }
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-flow: column;
   }
 }
 
@@ -20,4 +25,10 @@
 .form_search {
   width: 205px;
   margin: auto;
+}
+
+.form_section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }

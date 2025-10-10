@@ -12,7 +12,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    flex: 1 1 25%;
+    min-width: 300px;
     border-radius: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -32,4 +33,14 @@
 .prodImage {
   width: 12rem;
   border-radius: 0 1rem 0 0;
+}
+
+@media (max-width: 600px) {
+  .tarjeta_producto {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+  .prodImage {
+    width: 8rem;
+  }
 }

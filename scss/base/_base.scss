@@ -11,6 +11,7 @@
 body {
   background: variables.$color-grey-light-1;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -20,4 +21,8 @@ html {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+label {
+  font-size: 1.5rem;
 }

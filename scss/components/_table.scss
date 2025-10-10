@@ -1,0 +1,20 @@
+@use "../abstract/_variables.scss";
+
+table {
+  margin: 5rem auto;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 3px #ddd;
+  th,
+  td {
+    text-align: center;
+    padding: 8px;
+    font-size: 1.4rem;
+  }
+  tr {
+    border: 1px solid #ddd;
+  }
+  tr:nth-child(even) {
+    background-color: variables.$color-accent-light;
+  }
+}

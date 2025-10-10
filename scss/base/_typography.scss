@@ -14,9 +14,8 @@ body {
 }
 
 .heading__secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   color: variables.$color-primary-medium;
 }
 
@@ -32,4 +31,10 @@ body {
 
 .menu_text {
   font-size: 1.8rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: semibold;
+  color: variables.$color-menu;
 }

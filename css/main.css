@@ -9,6 +9,7 @@
 body {
   background: #f5f5f5;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -19,6 +20,10 @@ html {
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+label {
+  font-size: 1.5rem;
 }
 
 body {
@@ -35,9 +40,8 @@ body {
 }
 
 .heading__secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   color: #00346e;
 }
 
@@ -53,6 +57,12 @@ body {
 
 .menu_text {
   font-size: 1.8rem;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: semibold;
+  color: #525252;
 }
 
 .u-center-text {
@@ -110,20 +120,34 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: #f5f5f5;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 9.6rem;
   background: #fff;
   box-shadow: 0 2px, 4px, 0.3;
+  margin-bottom: 1rem;
+}
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 5rem;
 }
 .header_img {
-  width: 25rem;
+  width: 5rem;
+}
+@media (max-width: 700px) {
+  .header {
+    flex-flow: column;
+    height: auto;
+  }
 }
 
 /*.main {
@@ -133,11 +157,20 @@ body {
   height: 4rem;
   width: 100vw;
   display: flex;
-  background: #004c9c;
+  background: #1e73be;
   position: fixed;
   bottom: 0;
   left: 0;
   color: #fff;
+}
+
+section {
+  background-color: white;
+  width: 70vw;
+  margin: 5rem auto;
+  padding: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainMenu {
@@ -146,15 +179,35 @@ body {
   align-items: center;
   gap: 3rem;
 }
+@media (max-width: 700px) {
+  .mainMenu {
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 5rem auto;
+  }
+}
 .mainMenu li {
   list-style: none;
 }
 .mainMenu li a {
   font-size: 1.6rem;
-  color: gray;
+  color: #525252;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .mainMenu li a {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  .mainMenu li a {
+    font-size: 1.8rem;
+  }
+}
+.mainMenu li a:hover {
+  color: #1e73be;
 }
 .mainMenu {
   margin-right: 5rem;
@@ -163,6 +216,114 @@ body {
 .menu__ico {
   width: 2.5rem;
   height: auto;
+}
+
+.form_stock {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form_stock fieldset {
+  display: flex;
+  width: 100%;
+  border: none;
+  gap: 5rem;
+}
+
+.form_title {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form_search {
+  width: 205px;
+  margin: auto;
+}
+
+table {
+  margin: 5rem auto;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 3px #ddd;
+}
+table th,
+table td {
+  text-align: center;
+  padding: 8px;
+  font-size: 1.4rem;
+}
+table tr {
+  border: 1px solid #ddd;
+}
+table tr:nth-child(even) {
+  background-color: rgba(255, 191, 0, 0.6117647059);
+}
+
+.tarjeta {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.tarjeta_producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-left: 5px solid;
+  border-left-color: #ffbe00;
+}
+.tarjeta_producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25), 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+.tarjeta_texto {
+  padding: 2rem;
+}
+
+.prodImage {
+  width: 12rem;
+  border-radius: 0 1rem 0 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 100vw;
+  height: calc(100vh - 11rem);
+  background-color: #f5f5f5;
+}
+@media (max-width: 600px) {
+  .dashboard {
+    overflow: auto;
+  }
+}
+.dashboard_card {
+  flex: 1 1 45%;
+  min-width: 300px;
+  height: 40vh;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 600px) {
+  .dashboard_card {
+    flex: 1 1 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

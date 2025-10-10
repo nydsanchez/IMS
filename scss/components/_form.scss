@@ -1,0 +1,23 @@
+.form_stock {
+  display: flex;
+  flex-wrap: wrap;
+
+  & fieldset {
+    display: flex;
+    width: 100%;
+    border: none;
+    gap: 5rem;
+  }
+}
+
+.form_title {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form_search {
+  width: 205px;
+  margin: auto;
+}

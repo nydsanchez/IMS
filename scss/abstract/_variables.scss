@@ -1,10 +1,11 @@
-$color-primary: #004c9c;
+$color-primary: #1e73be;
 $color-primary-light: #3576ca;
 $color-primary-medium: #00346e;
 $color-primary-dark: #00285a;
 
 // Colores de Acento y Estado (Amarillo/Verde/Rojo)
 $color-accent: #ffbe00; // Dorado de las cajas (secundario)
+$color-accent-light: #ffbf009c; // Dorado de las cajas (secundario)
 $color-success: #53d853; // Verde de la flecha de Ingreso
 $color-danger: #cc3333; // Rojo para Egresos/Errores
 $color-secondary: #fff; // Blanco principal
@@ -17,9 +18,7 @@ $color-grey-dark: #626262; // Texto secundario
 $color-grey-dark-2: #464646; // Texto de contenido
 $color-grey-dark-3: #333; // Texto de encabezados
 
-$color-menu: #1e1e1e;
-
-$color-menu: #1e1e1e;
+$color-menu: #525252;
 $color-black: #000;
 $color-view: $color-black;
 

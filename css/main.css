@@ -26,6 +26,11 @@ label {
   font-size: 1.5rem;
 }
 
+@media (max-width: 600px) {
+  label {
+    font-size: 1.2rem;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -277,12 +282,11 @@ table tr:nth-child(even) {
   table {
     margin-top: 1.5rem;
   }
-  table,
-  th,
-  td {
+  table th,
+  table td {
     text-align: center;
     padding: 5px;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 .tarjeta {

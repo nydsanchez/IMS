@@ -9,65 +9,48 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sistema de Gestion de Inventario</title>
   </head>
   <body>
     <header class="header">
-      <img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+      <a href="./index.html" class="header_logo"
+        ><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+        <span class="brand">ServiStock</span></a
+      >
       <nav>
         <ul class="mainMenu">
           <li>
-            <a href="#">
-              <img
-                src="./img/gestionInventario.png"
-                alt="ingresoProd"
-                class="menu__ico"
-              />
-              Gestión de Stock</a
-            >
+            <a href="./movimientos.html"> Gestión de Stock</a>
           </li>
 
           <li>
-            <a href="#">
-              <img
-                src="./img/catProd.png"
-                alt="CatalagoProductos"
-                class="menu__ico"
-              />
-              Catálago de Productos</a
-            >
+            <a href="./productos.html"> Catálago de Productos</a>
           </li>
           <li>
-            <a href="#">
-              <img
-                src="./img/inventario.png"
-                alt="inventario"
-                class="menu__ico"
-              />
-              Inventario</a
-            >
+            <a href="./inventario.html"> Inventario</a>
           </li>
         </ul>
       </nav>
     </header>
-    <section id="gstionStock">
-      <form>
-        <h2>Gestión de Stock de Productos</h2>
-        <input type="date" placeholder="fecha" />
-        <select name="productos" id="productos">
-          <option value="">Seleccione un Producto</option>
-        </select>
-        <select name="movimiento" id="movimiento">
-          <option value="">Seleccion el tipo de movimiento</option>
-          <option value="1">Compra</option>
-          <option value="2">Venta</option>
-          <option value="3">Traslado</option>
-          <option value="4">Devolucion</option>
-        </select>
-        <input type="number" placeholder="cantidad" />
-        <input type="number" placeholder="precio unitario" />
-      </form>
-    </section>
+    <main id="dashboard" class="dashboard">
+      <div class="dashboard_card">
+        <span class="heading__secondary"> Existencias Criticas </span>
+      </div>
+      <div class="dashboard_card">
+        <span class="heading__secondary">Ingresos</span>
+      </div>
+      <div class="dashboard_card">
+        <span class="heading__secondary">Traslados</span>
+      </div>
+      <div class="dashboard_card">
+        <span class="heading__secondary">Stock General</span>
+      </div>
+    </main>
+
     <script src="./js/ingreso.js"></script>
   </body>
 </html>

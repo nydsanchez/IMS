@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/img/logo_header_TextH.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>SERVISTOCK</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="./index.html" class="header_logo"
-        ><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
-        <span class="brand">ServiStock</span></a
-      >
-      <nav>
-        <ul class="mainMenu">
-          <li>
-            <a href="./movimientos.html"> Gestión de Stock</a>
-          </li>
 
-          <li>
-            <a href="./productos.html"> Catálago de Productos</a>
-          </li>
-          <li>
-            <a href="./inventario.html"> Inventario</a>
-          </li>
-          <li>
-            <a href="#">Reportes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="dashboard" class="dashboard">
-      <div class="dashboard_card">
-        <span class="heading__secondary"> Existencias Criticas </span>
-      </div>
-      <div class="dashboard_card">
-        <span class="heading__secondary">Ingresos</span>
-      </div>
-      <div class="dashboard_card">
-        <span class="heading__secondary">Traslados</span>
-      </div>
-      <div class="dashboard_card">
-        <span class="heading__secondary">Stock General</span>
-      </div>
-    </main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/img/logo_header_TextH.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>SERVISTOCK</title>
+</head>
 
-    <script src="./js/ingreso.js"></script>
-  </body>
+<body>
+  <header class="header">
+    <a href="./index.html" class="header_logo"><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+      <span class="brand">ServiStock</span></a>
+    <nav>
+      <ul class="mainMenu">
+        <li class="dropdown">
+          <span class="dropbtn"> Gestión de Stock</span>
+          <div class="dropdown-content">
+            <a href="./movimientos.html">Ingreso de inventario</a>
+            <a href="#">Salida de inventario</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <span class="dropbtn"> Catálagos</span>
+          <div class="dropdown-content">
+            <a href="./productos.html">Productos</a>
+            <a href="#">Bodegas</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Unidades de medida</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <span class="dropbtn">Disponibilidad</span>
+          <div class="dropdown-content">
+            <a href="#">por Bodega</a>
+            <a href="./inventario.html">por Producto</a>
+
+          </div>
+        </li>
+        <li>
+          <a class="dropbtn" href="#">Reportes</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="dashboard" class="dashboard">
+    <div class="dashboard_card">
+      <span class="heading__secondary"> Existencias Criticas </span>
+    </div>
+    <div class="dashboard_card">
+      <span class="heading__secondary">Ingresos</span>
+    </div>
+    <div class="dashboard_card">
+      <span class="heading__secondary">Traslados</span>
+    </div>
+    <div class="dashboard_card">
+      <span class="heading__secondary">Stock General</span>
+    </div>
+  </main>
+
+  <script src="./js/ingreso.js"></script>
+</body>
+
 </html>

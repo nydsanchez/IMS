@@ -162,7 +162,7 @@ body {
   height: 4rem;
   width: 100vw;
   display: flex;
-  background: #1e73be;
+  background: #366aac;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -194,25 +194,27 @@ section {
 .mainMenu li {
   list-style: none;
 }
-.mainMenu li a {
+.mainMenu li .dropbtn {
   font-size: 1.6rem;
   color: #525252;
+  background: none;
   display: block;
   padding: 0.5rem;
+  border: none;
   border-radius: 5px;
 }
 @media (max-width: 800px) {
-  .mainMenu li a {
+  .mainMenu li .dropbtn {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 700px) {
-  .mainMenu li a {
+  .mainMenu li .dropbtn {
     font-size: 1.8rem;
   }
 }
-.mainMenu li a:hover {
-  background: rgba(255, 191, 0, 0.6117647059);
+.mainMenu li .dropbtn:hover {
+  color: #366aac;
 }
 .mainMenu {
   margin-right: 5rem;
@@ -221,6 +223,37 @@ section {
 .menu__ico {
   width: 2.5rem;
   height: auto;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a {
+  color: #525252;
+  padding: 1.2rem 1.4rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1.4rem;
+}
+.dropdown-content a:hover {
+  background-color: #366aac;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #366aac;
 }
 
 .form_stock {

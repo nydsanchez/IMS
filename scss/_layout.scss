@@ -2,7 +2,11 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 10rem);
+  overflow: hidden;
+  @media (max-width: 600px) {
+    overflow: auto;
+  }
 }
 
 .header {

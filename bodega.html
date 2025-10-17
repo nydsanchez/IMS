@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/img/logo_header_TextH.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>SERVISTOCK</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html" class="header_logo"><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+      <span class="brand">ServiStock</span></a>
+    <nav>
+      <ul class="mainMenu">
+        <li class="dropdown">
+          <span class="dropbtn"> Gestión de Stock</span>
+          <div class="dropdown-content">
+            <a href="./movimientos.html">Ingreso de inventario</a>
+            <a href="#">Salida de inventario</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <span class="dropbtn"> Catálagos</span>
+          <div class="dropdown-content">
+            <a href="./productos.html">Productos</a>
+            <a href="#">Bodegas</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Unidades de medida</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <span class="dropbtn">Disponibilidad</span>
+          <div class="dropdown-content">
+            <a href="./bodega.html">por Bodega</a>
+            <a href="./inventario.html">por Producto</a>
+
+          </div>
+        </li>
+        <li>
+          <a class="dropbtn" href="#">Reportes</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+
+    <div class="container__bodega">
+      <h1>Inventario General</h1>
+      <select name="bodega" id="bodega" class="container_select">
+        <option value="1">Bodega 1</option>
+        <option value="2">Bodega 2</option>
+        <option value="3">Bodega 3</option>
+      </select>
+
+      <div class="bodega_leyenda"> Leyenda de colores
+        <span>🟩 50% o más de espacio disponible</span>
+        <span>🟨 30% - 49% de espacio disponible</span>
+        <span>🟥 29% o menos de espacio disponible</span>
+      </div>
+    </div>
+    <div class="bodega">
+      <div class="rack">
+        <h2>Rack 1</h2>
+        <div class="estante estante__medio">Estante 1</div>
+        <div class="estante estante__libre">Estante 2</div>
+        <div class="estante estante__libre">Estante 3</div>
+        <div class="estante estante__libre">Estante 4</div>
+        <div class="estante estante__libre">Estante 5</div>
+        <div class="estante estante__libre">Estante 6</div>
+        <div class="estante estante__medio">Estante 7</div>
+        <div class="estante estante__libre">Estante 8</div>
+      </div>
+      <div class="rack">
+        <h2>Rack 2</h2>
+        <div class="estante estante__medio">Estante 1</div>
+        <div class="estante estante__medio">Estante 2</div>
+        <div class="estante estante__libre">Estante 3</div>
+        <div class="estante estante__medio">Estante 4</div>
+        <div class="estante estante__libre">Estante 5</div>
+        <div class="estante estante__ocupado">Estante 6</div>
+        <div class="estante estante__medio">Estante 7</div>
+        <div class="estante estante__libre">Estante 8</div>
+      </div>
+      <div class="rack">
+        <h2>Rack 3</h2>
+        <div class="estante estante__medio">Estante 1</div>
+        <div class="estante estante__libre">Estante 2</div>
+        <div class="estante estante__medio">Estante 3</div>
+        <div class="estante estante__medio">Estante 4</div>
+        <div class="estante estante__ocupado">Estante 5</div>
+        <div class="estante estante__ocupado">Estante 6</div>
+        <div class="estante estante__medio">Estante 7</div>
+        <div class="estante estante__ocupado">Estante 8</div>
+      </div>
+      <div class="rack">
+        <h2>Rack 4</h2>
+        <div class="estante estante__ocupado">Estante 1</div>
+        <div class="estante estante__ocupado">Estante 2</div>
+        <div class="estante estante__ocupado">Estante 3</div>
+        <div class="estante estante__ocupado">Estante 4</div>
+        <div class="estante estante__ocupado">Estante 5</div>
+        <div class="estante estante__ocupado">Estante 6</div>
+        <div class="estante estante__ocupado">Estante 7</div>
+        <div class="estante estante__ocupado">Estante 8</div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/ingreso.js"></script>
+</body>
+
+</html>

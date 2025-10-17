@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/img/logo_header_TextH.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>SERVISTOCK</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="./index.html" class="header_logo"
-        ><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
-        <span class="brand">ServiStock</span></a
-      >
-      <nav>
-        <ul class="mainMenu">
-          <li>
-            <a href="./movimientos.html"> Gestión de Stock</a>
-          </li>
 
-          <li>
-            <a href="./productos.html"> Catálago de Productos</a>
-          </li>
-          <li>
-            <a href="./inventario.html"> Inventario</a>
-          </li>
-          <li>
-            <a href="#">Reportes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="Productos">
-        <h2 class="form_title">Catalogo de Productos</h2>
-        <form class="form_search">
-          <input type="text" id="CodProd" placeholder="Codigo" />
-          <button>🔍</button>
-        </form>
-        <div class="tarjeta">
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/img/logo_header_TextH.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>SERVISTOCK</title>
+</head>
 
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
+<body>
+  <header class="header">
+    <a href="./index.html" class="header_logo"><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+      <span class="brand">ServiStock</span></a>
+    <nav>
+      <ul class="mainMenu">
+        <li class="dropdown">
+          <span class="dropbtn"> Gestión de Stock</span>
+          <div class="dropdown-content">
+            <a href="./movimientos.html">Ingreso de inventario</a>
+            <a href="#">Salida de inventario</a>
           </div>
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
+        </li>
 
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
+        <li class="dropdown">
+          <span class="dropbtn"> Catálagos</span>
+          <div class="dropdown-content">
+            <a href="./productos.html">Productos</a>
+            <a href="#">Bodegas</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Unidades de medida</a>
           </div>
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
+        </li>
+        <li class="dropdown">
+          <span class="dropbtn">Disponibilidad</span>
+          <div class="dropdown-content">
+            <a href="./bodega.html">por Bodega</a>
+            <a href="./inventario.html">por Producto</a>
 
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
           </div>
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
-
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
+        </li>
+        <li>
+          <a class="dropbtn" href="#">Reportes</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="Productos">
+      <h2 class="form_title">Catalogo de Productos</h2>
+      <form class="form_search">
+        <input type="text" id="CodProd" placeholder="Codigo" />
+        <button>🔍</button>
+      </form>
+      <div class="tarjeta">
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
           </div>
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
 
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
-          </div>
-          <div class="tarjeta_producto">
-            <div class="tarjeta_texto">
-              <h3>prod1</h3>
-              <span>[codigo]</span>
-              <h4>precio</h4>
-              <p>cantidad</p>
-            </div>
-
-            <div>
-              <img src="./img/no-image.png" alt="no image" class="prodImage" />
-            </div>
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
           </div>
         </div>
-      </section>
-    </main>
-    <script src="./js/ingreso.js"></script>
-  </body>
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
+          </div>
+
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
+          </div>
+        </div>
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
+          </div>
+
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
+          </div>
+        </div>
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
+          </div>
+
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
+          </div>
+        </div>
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
+          </div>
+
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
+          </div>
+        </div>
+        <div class="tarjeta_producto">
+          <div class="tarjeta_texto">
+            <h3>prod1</h3>
+            <span>[codigo]</span>
+            <h4>precio</h4>
+            <p>cantidad</p>
+          </div>
+
+          <div>
+            <img src="./img/no-image.png" alt="no image" class="prodImage" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./js/ingreso.js"></script>
+</body>
+
 </html>

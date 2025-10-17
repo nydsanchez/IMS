@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/img/logo_header_TextH.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>SERVISTOCK</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="./index.html" class="header_logo"
-        ><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
-        <span class="brand">ServiStock</span></a
-      >
-      <nav>
-        <ul class="mainMenu">
-          <li>
-            <a href="./movimientos.html"> Gestión de Stock</a>
-          </li>
 
-          <li>
-            <a href="./productos.html"> Catálago de Productos</a>
-          </li>
-          <li>
-            <a href="./inventario.html"> Inventario</a>
-          </li>
-          <li>
-            <a href="#">Reportes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="gestionStock">
-        <form class="form_stock">
-          <h2 class="form_title">Gestión de Stock de Productos</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/img/logo_header_TextH.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>SERVISTOCK</title>
+</head>
 
-          <div class="form_section">
-            <label for="nroMov">Referencia:</label>
-            <input type="text" id="nroMov" placeholder="Nro. Referencia" />
+<body>
+  <header class="header">
+    <a href="./index.html" class="header_logo"><img src="./img/logo_header_TextH.png" alt="logo" class="header_img" />
+      <span class="brand">ServiStock</span></a>
+    <nav>
+      <ul class="mainMenu">
+        <li class="dropdown">
+          <span class="dropbtn"> Gestión de Stock</span>
+          <div class="dropdown-content">
+            <a href="./movimientos.html">Ingreso de inventario</a>
+            <a href="#">Salida de inventario</a>
           </div>
-          <div class="form_section">
-            <label for="dateMov">Fecha:</label>
-            <input type="date" id="dateMov" placeholder="fecha" />
-          </div>
-          <div class="form_section">
-            <label for="movimiento">Tipo de Movimiento</label>
-            <select name="movimiento" id="movimiento">
-              <option value="">Movimiento</option>
-              <option value="1">Compra</option>
-              <option value="2">Venta</option>
-              <option value="3">Traslado</option>
-              <option value="4">Devolucion</option>
-            </select>
-          </div>
-          <div class="form_section">
-            <label for="proveedor">Proveedor:</label>
-            <input type="text" id="proveedor" placeholder="Proveedor" />
-          </div>
+        </li>
 
-          <table>
+        <li class="dropdown">
+          <span class="dropbtn"> Catálagos</span>
+          <div class="dropdown-content">
+            <a href="./productos.html">Productos</a>
+            <a href="#">Bodegas</a>
+            <a href="#">Ubicaciones</a>
+            <a href="#">Unidades de medida</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <span class="dropbtn">Disponibilidad</span>
+          <div class="dropdown-content">
+            <a href="./bodega.html">por Bodega</a>
+            <a href="./inventario.html">por Producto</a>
+
+          </div>
+        </li>
+        <li>
+          <a class="dropbtn" href="#">Reportes</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="gestionStock">
+      <form class="form_stock">
+        <h2 class="form_title">Gestión de Stock de Productos</h2>
+
+        <div class="form_section">
+          <label for="nroMov">Referencia:</label>
+          <input type="text" id="nroMov" placeholder="Nro. Referencia" />
+        </div>
+        <div class="form_section">
+          <label for="dateMov">Fecha:</label>
+          <input type="date" id="dateMov" placeholder="fecha" />
+        </div>
+        <div class="form_section">
+          <label for="movimiento">Tipo de Movimiento</label>
+          <select name="movimiento" id="movimiento">
+            <option value="">Movimiento</option>
+            <option value="1">Compra</option>
+            <option value="2">Venta</option>
+            <option value="3">Traslado</option>
+            <option value="4">Devolucion</option>
+          </select>
+        </div>
+        <div class="form_section">
+          <label for="proveedor">Proveedor:</label>
+          <input type="text" id="proveedor" placeholder="Proveedor" />
+        </div>
+
+        <table>
+          <tr>
+            <th>Cod. Producto</th>
+            <th>No. Lote</th>
+            <th>UdM</th>
+            <th>Cantidad</th>
+            <th>P. Unit.</th>
+            <th>Monto</th>
+          </tr>
+          <tbody>
             <tr>
-              <th>Cod. Producto</th>
-              <th>No. Lote</th>
-              <th>UdM</th>
-              <th>Cantidad</th>
-              <th>P. Unit.</th>
-              <th>Monto</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
-      </section>
-    </main>
-    <script src="./js/ingreso.js"></script>
-  </body>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+  </main>
+  <script src="./js/ingreso.js"></script>
+</body>
+
 </html>

@@ -19,7 +19,8 @@
   width: 30rem;
   display: flex;
   flex-flow: column;
-  border: 1px solid variables.$color-grey-dark;
+  border-radius: 5px;
+  border: 1px solid variables.$color-primary;
 }
 .bodega {
   display: flex;
@@ -45,6 +46,7 @@
   gap: 1rem;
   height: auto;
   background: variables.$color-secondary;
+  border-radius: 5px;
   @media (max-width: 600px) {
     overflow: auto;
   }
